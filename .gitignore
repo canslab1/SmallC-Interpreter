@@ -1,12 +1,36 @@
+# ===== Python =====
 __pycache__/
 *.py[cod]
+*$py.class
 *.egg-info/
 dist/
 build/
+*.egg
+
+# ===== Virtual Environments =====
 .venv/
 venv/
-.DS_Store
+env/
+
+# ===== IDE & Editors =====
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
+
+# ===== macOS =====
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ===== Dropbox =====
+*衝突的複本*
+*(conflicted copy*
+
+# ===== AI Tools =====
+.claude/
+
+# ===== Project-Specific =====
+*.sc
+test_*.sc

@@ -1,0 +1,34 @@
+# SmallC-Interpreter
+
+> A Small-C interactive interpreter for system software education.
+
+SmallC-Interpreter is a fully-featured interactive interpreter for the Small-C programming language, a strict subset of ISO C. It provides a REPL environment where users can enter Small-C code for immediate execution or load complete source files for batch execution.
+
+## Key Features
+
+- Interactive REPL with `sc>` prompt and multi-line input detection
+- Recursive-descent parser with 13-level operator precedence
+- Tree-walking interpreter with simulated byte-addressable memory
+- 23 built-in functions (I/O, string, math, utility)
+- Program buffer management (LOAD, SAVE, LIST, EDIT, DELETE, INSERT, APPEND)
+- Execution tracing (TRACE ON/OFF) and state inspection (VARS, FUNCS)
+- Comprehensive error handling with syntax and runtime error messages
+
+## Supported Small-C Features
+
+- Data types: int (32-bit), char (8-bit), pointers (int*, char*)
+- Control flow: if/else, while, for, do/while, break, continue, return, switch/case
+- Functions with recursion, one-dimensional arrays, pointer arithmetic
+- #define preprocessor, C-style comments
+
+## Technical Details
+
+- Language: Python 3.10+
+- No third-party dependencies
+- Architecture: Source → Preprocessor → Lexer → Parser → AST → Interpreter
+- Entry point: python3 main.py
+
+## Links
+
+- Repository: https://github.com/canslab1/SmallC-Interpreter
+- CANS Lab: https://canslab1.github.io/

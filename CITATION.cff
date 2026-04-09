@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "SmallC-Interpreter: A Small-C Interactive Interpreter for System Software Education"
+type: software
+authors:
+  - family-names: "Huang"
+    given-names: "Chung-Yuan"
+    orcid: ""
+    affiliation: "Department of Computer Science and Information Engineering, Chang Gung University"
+version: "1.0.0"
+date-released: "2026-04-09"
+license: MIT
+url: "https://github.com/canslab1/SmallC-Interpreter"
+repository-code: "https://github.com/canslab1/SmallC-Interpreter"
+keywords:
+  - interpreter
+  - small-c
+  - system-software
+  - compiler-design
+  - lexer
+  - parser
+  - repl
+  - education

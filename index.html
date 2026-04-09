@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmallC-Interpreter — A Small-C Interactive Interpreter</title>
+    <meta name="description" content="A fully-featured interactive interpreter for the Small-C programming language, designed for system software education.">
+    <style>
+        :root { --primary: #2563eb; --bg: #f8fafc; --text: #1e293b; --muted: #64748b; --card: #ffffff; --border: #e2e8f0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+        .container { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
+        h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .subtitle { color: var(--muted); font-size: 1.1rem; margin-bottom: 2rem; }
+        .badges { margin-bottom: 2rem; }
+        .badges img { margin-right: 0.4rem; }
+        h2 { font-size: 1.4rem; margin-top: 2.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border); padding-bottom: 0.3rem; }
+        p { margin-bottom: 1rem; }
+        ul { margin-left: 1.5rem; margin-bottom: 1.5rem; }
+        li { margin-bottom: 0.4rem; }
+        code { background: #f1f5f9; padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.9em; }
+        pre { background: #1e293b; color: #e2e8f0; padding: 1.2rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1.5rem; font-size: 0.85rem; line-height: 1.6; }
+        a { color: var(--primary); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .btn { display: inline-block; background: var(--primary); color: #fff; padding: 0.6rem 1.5rem; border-radius: 6px; font-weight: 600; margin-right: 0.8rem; margin-bottom: 0.5rem; }
+        .btn:hover { opacity: 0.9; text-decoration: none; }
+        .btn-outline { background: transparent; color: var(--primary); border: 2px solid var(--primary); }
+        footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SmallC-Interpreter</h1>
+        <p class="subtitle">A Small-C Interactive Interpreter for System Software Education</p>
+
+        <div class="badges">
+            <img src="https://img.shields.io/badge/Python-3.10%2B-blue" alt="Python 3.10+">
+            <img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License">
+            <a href="https://canslab1.github.io/"><img src="https://img.shields.io/badge/CANS_Lab-Homepage-orange" alt="CANS Lab"></a>
+        </div>
+
+        <a class="btn" href="https://github.com/canslab1/SmallC-Interpreter">View on GitHub</a>
+        <a class="btn btn-outline" href="https://github.com/canslab1/SmallC-Interpreter/archive/refs/heads/main.zip">Download ZIP</a>
+
+        <h2>Overview</h2>
+        <p>SmallC-Interpreter is a fully-featured interactive interpreter for the <strong>Small-C</strong> programming language, a strict subset of ISO C originally defined by Ron Cain (1980) and James Hendrix (1984). It provides a REPL environment where users can enter Small-C code line by line for immediate execution, or load complete source files for batch execution.</p>
+
+        <h2>Quick Start</h2>
+<pre>git clone https://github.com/canslab1/SmallC-Interpreter.git
+cd SmallC-Interpreter
+python3 main.py</pre>
+
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Interactive REPL</strong> with <code>sc&gt;</code> prompt and multi-line input detection</li>
+            <li><strong>Recursive-descent parser</strong> with 13-level operator precedence</li>
+            <li><strong>Tree-walking interpreter</strong> with simulated byte-addressable memory</li>
+            <li><strong>23 built-in functions</strong> — I/O, string, math, and utility</li>
+            <li><strong>Program buffer management</strong> — LOAD, SAVE, LIST, EDIT, DELETE, INSERT, APPEND</li>
+            <li><strong>Execution tracing</strong> and <strong>state inspection</strong> commands</li>
+            <li><strong>Comprehensive error handling</strong> with clear messages</li>
+        </ul>
+
+        <footer>
+            &copy; 2026 <a href="https://canslab1.github.io/">CANS Lab</a>, Chang Gung University. Released under the MIT License.
+        </footer>
+    </div>
+</body>
+</html>
