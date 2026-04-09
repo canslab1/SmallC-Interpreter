@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smallc-interpreter"
+version = "1.0"
+description = "Small-C Interactive Interpreter - System Software Final Project"
+requires-python = ">=3.10"
+# No third-party dependencies
+
+[project.scripts]
+smallc = "main:main"
